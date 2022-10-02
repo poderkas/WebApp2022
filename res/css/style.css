@@ -41,6 +41,31 @@ h3{
     text-align: left;
     font-size: 15px;
 }
+/* Formatting for links in text*/
+#link-text{
+	font-size: 15px;
+	font-family: sans-serif;
+	text-align: center;
+	color: LightSkyBlue;
+	text-decoration: italic;
+}
+
+/* Line between text parts*/
+hr {
+	border: none;
+	background-color: Lime;
+	height: 3px;
+	margin-top: 4px;
+	margin-bottom: 7px;
+}
+
+/* Input area for new posts*/
+textarea {
+	width: 260px;
+	height: 150px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
 
 /* Mobile nav */
 .menu {
