@@ -25,9 +25,10 @@ a {
 }
 .item {
     padding: 20px;
+    height: 100px;
 }
 .item a:hover {
-    color: #ccc;
+    color: LightYellow;
 }
 h1{
     font-size: 20px;
