@@ -1,49 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
- 
-    <meta charset="utf-8">
-    <title>hw1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./res/css/style.css">
- 
+    <title>Homework 1</title>
 </head>
-
-<header>
-    <nav>
-        <ul class="menu">
-            <li class="item"><a href="index.html">Home</a></li>
-            
-            <li class="item"><a href="addPost.html">Add Post</a></li>
-            
-            <li class="item"><a href=login.html target="_self"><img alt="account"
-                src="./res/images/accountblank.png"></a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+	<header>
+		<nav class="menu">
+			<ul>
+				<li class="item"><a href="index.html">Home</a></li>
+            	
+	            <li class="item"><a href="addPost.html">Add Post</a></li>
+	            
+	            <li><a href=login.html><img alt="account"
+	                src="./res/images/accountblank.png"></a></li>
+			</ul>
+		</nav>
+	</header>
+
     <div class="login">
-        <form>
+        <form action="index.html">
             <h1>Welcome to PostIt</h1>
             <hr>
             <a href="index.html"><div id ='link-text'>Create new account</div></a>
             <h2>or</h2>
             <h1>Log in</h1>
-            <label>Email</label>
-            <input type="text" required placeholder="email">
-            <label>Password</label>
-            <input type="password" required placeholder="password">
-            <button>Check if something is wrong</button>
-            <button type="button" onclick="ButtonRedirect()" >Submit</button>
-            <!-- the upper works fine, but doesn't check if something is written in 'email* and 'password' -->
+            <label for="email">Email</label>
+            <input type="text" name="email" required placeholder="email">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" required placeholder="password">
+            <input type="submit" value="Submit">
+            <!-- the upper works fine, but doesn't check if something is written in 'email* and 'password'*/ -->
             <a href="#"><div id ='link-text'>Forgot Password?</div></a>
             
         </form>
     </div>
 
-
-<script src='./res/scripts/buttonredirect.js'></script>
+	<footer>
+		<p>
+			WAD 2022, group AO
+		</p>
+	</footer>	
 </body>
 
 

@@ -1,159 +1,184 @@
-/* General styling */
+/*General styling*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-body {
-    font-family: sans-serif;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #222;
-}
-nav {
-    position: fixed;
-    top: 0px;
-    background: #222;
-    padding: 0;
-}
-a {
-    color: rgb(230, 230, 230);
-    text-decoration: none;
-}
-.item {
-    padding: 20px;
-    height: 100px;
-}
-.item a:hover {
-    color: LightYellow;
-}
-h1{
-    font-size: 20px;
-    text-align: center;
-}
-h2{
-    font-size: 15px;
-    text-align: center;
-}
-h3{
-    text-align: left;
-    font-size: 15px;
-}
+ }
+ body {
+     position: relative;
+     background: #222;
+     font-family: sans-serif;
+     font-size: 16px;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     line-height: 1.6;
+ }
+ header {
+     padding: 10px 40px; 
+     background: #1a1919;
+ }
+ header li {
+     border: 3px solid Lime;
+ }
+ main {
+     position: absolute;
+     left: 8%;
+     right: 8%;
+     top: 92 px;
+     bottom: 40px;
+     padding: 10px 20px;
+ }
+ /*main ~ */
+ section {
+     padding: 10px 15px;
+     margin: 10px;
+     display: block;
+ }
+ aside {
+     position: absolute;
+     width: 8%;
+     top: 92px;
+     bottom: 40px;
+     background: #181717;
+ }
+ #left {
+     left: 0px;
+ }
+ #right{
+     right: 0px;
+ }
+ footer {
+     position: absolute;
+     left: 0px;
+     right: 0px;
+     bottom: 0px;
+     height: 40px;
+     padding: 10px 40px;
+     background: #1a1919;
+ }
 
-/* Addicional space between horizontal line and buttons*/
-hr + button {
-	margin-top: 3px;
-}
+ a {
+     color: rgb(230, 230, 230);
+     text-decoration: none;
+ }
 
-/* Makes borders between elements in the header*/
-header li {
-	border: 3px solid Lime;
-}
-
-/* Formatting for links in text*/
-#link-text{
-	font-size: 15px;
-	font-family: sans-serif;
-	text-align: center;
-	color: DarkSlateGrey;
-	font-weight: bold;
-}
-
-/* Line between text parts*/
-hr {
-	border: none;
-	background-color: Lime;
-	height: 3px;
-	margin-top: 4px;
-	margin-bottom: 7px;
-}
-
-/* Input area for new posts*/
-textarea {
-	width: 260px;
-	height: 150px;
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
-
-/* Mobile nav */
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-.menu li a {
-    display: block;
-    padding: 15px 5px;
-}
-.item {
-    width: 100%;
-    text-align: center;
-}
-
-/* Desktop nav */
-@media all and (min-width: 960px) {
-    .menu {
-        align-items: flex-start;     
-        flex-wrap: nowrap;
-        background: none;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-
-    }
-    .item {
-        order: 1;
-        position: relative;
-        display: block; 
-        width: auto;
-    } 
-    .item:last-of-type{
-        justify-content: right;
-
-    }
-}
-
-/* Login form */
-
-.login{
-    width: 400px;
-    display: flex;
-    max-width: 900px;
-    background: rgb(167, 167, 167);
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-form{
-    width: 260px;
-    margin: 60px auto;
-}
-.login input{
-    width: 100%;
-    clear: both;
-}
-
-/* Add post form */
-
-/* Login form */
-
-.addPost{
-    width: 400px;
-    display: flex;
-    max-width: 900px;
-    background: rgb(167, 167, 167);
-    border-radius: 15px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-form{
-    width: 260px;
-    margin: 60px auto;
-}
-.addPost button{
-    align-items: center;
-}
+ 
+ .menu > ul{
+     font-size: 20px;
+     list-style: none;
+     display: inline-flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: left;
+     width: 100%;
+     align-items: center;
+ }
+ 
+ .menu ul li:last-child{
+     margin-left: auto;
+ }
+ 
+ .item {
+     padding: 20px;
+     text-align: baseline;
+ }
+ /* Mobile nav adjustment */
+ @media all and (max-width: 700px) {
+     .menu > ul {
+         font-size: 25px;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+     }
+     .menu ul li a {
+         display: block;
+         padding: 15px 5px;
+     }
+ 
+     .item {
+         width: 100%;
+         text-align: center;
+     }
+ }
+ .item a:hover {
+     background: #513d35;
+ }
+ p {
+     color: rgb(230, 230, 230);
+     text-align: flex-start;
+     font-size: 12px;
+ }
+ 
+ /* Formatting for links in text*/
+ #link-text{
+     font-size: 15px;
+     font-family: sans-serif;
+     text-align: center;
+     color: LightSkyBlue;
+     text-decoration: italic;
+ }
+ 
+ /* Line between text parts*/
+ hr {
+     border: none;
+     background-color: Lime;
+     height: 3px;
+     margin-top: 4px;
+     margin-bottom: 7px;
+ }
+ 
+ /* Input area for new posts*/
+ textarea {
+     width: 260px;
+     height: 150px;
+     margin-top: 5px;
+     margin-bottom: 10px;
+ }
+ .login{
+     margin-left: auto;
+     margin-right: auto;
+     width: 400px;
+     display: flex;
+     max-width: 900px;
+     background: rgb(167, 167, 167);
+     border-radius: 15px;
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+     justify-content: center;
+ }
+ form{
+     width: 260px;
+     margin: 60px auto;
+ }
+ .login input{
+     width: 100%;
+     clear: both;
+ }
+ 
+ /* Add post form */
+ 
+ /* Login form */
+ 
+ .addPost{
+     margin-left: auto;
+     margin-right: auto;
+     vertical-align: middle;
+     width: 400px;
+     display: flex;
+     max-width: 900px;
+     background: rgb(167, 167, 167);
+     border-radius: 15px;
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+     justify-content: center;
+ }
+ form{
+     width: 260px;
+     margin: 60px auto;
+ }
+ .addPost button{
+     align-items: center;
+ }
+ 

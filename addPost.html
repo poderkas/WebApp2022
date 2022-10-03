@@ -1,40 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
- 
-    <meta charset="utf-8">
-    <title>hw1</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./res/css/style.css">
- 
+    <title>Homework 1</title>
 </head>
-
-<header>
-    <nav>
-        <ul class="menu">
-            <li class="item"><a href="index.html">Home</a></li>
-            
-            <li class="item"><a href="addPost.html">Add Post</a></li>
-            
-            <li class="item"><a href=login.html target="_self"><img alt="account"
-                src="./res/images/accountblank.png"></a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 <body>
-    <div class="addPost">
-        <form>
-            <label>Post body</label>
-	    <textarea name="newPost"></textarea>
-            <label>Select file</label>
-            <button>Choose File</button>
-            <hr>
-            <button type="button" onclick="ButtonRedirect()" >Create post</button>
-        </form>
-    </div>
+	<header>
+		<nav class="menu">
+			<ul>
+				<li class="item"><a href="index.html">Home</a></li>
+	            
+	            <li><a href=login.html><img alt="account"
+	                src="./res/images/accountblank.png"></a></li>
+			</ul>
+		</nav>
+	</header>
 
-<script src='./res/scripts/buttonredirect.js'></script>
+	<div class="addPost">
+	    <form>
+	        <label>Post body</label>
+		<textarea name="newPost"></textarea>
+	        <label>Select file</label>
+	        <button>Choose File</button>
+	        <hr>
+	        <button type="button" onclick="ButtonRedirect()" >Create post</button>
+	    </form>
+    </div>	
+    <script src='./res/scripts/buttonredirect.js'></script>
+
+	<footer>
+		<p>
+			WAD 2022, group AO
+		</p>
+	</footer>	
 </body>
 
 
