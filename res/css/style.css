@@ -184,7 +184,7 @@
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 600px;
     background: rgb(167, 167, 167);
     border-radius: 15px;
     align-items: center;
@@ -196,11 +196,17 @@
     
 }
 .postFooter{
-    
+
 }
 .postText{
 
 }
-.postMedia{
 
+.post .postMedia{
+    justify-content: center;
+}
+
+.postMedia img{
+    width: 500px;
+    height: 100%;
 }
