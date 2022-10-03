@@ -21,14 +21,7 @@
  header li {
      border: 3px solid Lime;
  }
- main {
-     position: absolute;
-     left: 8%;
-     right: 8%;
-     top: 92 px;
-     bottom: 40px;
-     padding: 10px 20px;
- }
+ 
  /*main ~ */
  section {
      padding: 10px 15px;
@@ -84,7 +77,7 @@
      text-align: baseline;
  }
  /* Mobile nav adjustment */
- @media all and (max-width: 700px) {
+ @media only screen and (max-width: 700px) {
      .menu > ul {
          font-size: 25px;
          display: flex;
@@ -108,12 +101,11 @@
      background: #513d35;
  }
  p {
-     color: rgb(230, 230, 230);
+     color: rgb(0, 0, 0);
      text-align: flex-start;
      font-size: 12px;
  }
  
-
  /* Formatting for headers and links in text*/
 h1{
     font-size: 20px;
@@ -129,7 +121,7 @@ h3{
 }
 
  #link-text{
-     font-size: 17px;
+     font-size: 15px;
      font-family: sans-serif;
      text-align: center;
      color: DarkSlateGrey;
@@ -172,7 +164,6 @@ h3{
      clear: both;
  }
  
- /* Add post form */
  
  /* Login form */
  
@@ -188,11 +179,41 @@ h3{
      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
      justify-content: center;
  }
- form{
-     width: 260px;
-     margin: 60px auto;
- }
  .addPost button{
      align-items: center;
  }
- 
+
+
+ /* Index page content area */
+
+.contentArea{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background: rgb(167, 167, 167);
+    border-radius: 15px;
+    align-items: center;
+}
+.postHeader{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+.postFooter{
+    
+}
+.postText{
+
+}
+.postMedia{
+
+}
