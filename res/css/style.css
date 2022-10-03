@@ -106,13 +106,26 @@
      font-size: 12px;
  }
  
- /* Formatting for links in text*/
+ /* Formatting for headers and links in text*/
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+h2{
+    font-size: 15px;
+    text-align: center;
+}
+h3{
+    text-align: left;
+    font-size: 15px;
+}
+
  #link-text{
      font-size: 15px;
      font-family: sans-serif;
      text-align: center;
-     color: rgb(5, 29, 44);
-     text-decoration: italic;
+     color: DarkSlateGrey;
+     font-weight: bold;
  }
  
  /* Line between text parts*/
@@ -202,6 +215,7 @@
 
 }
 
+<<<<<<< HEAD
 .post .postMedia{
     justify-content: center;
 }
@@ -210,3 +224,6 @@
     width: 500px;
     height: 100%;
 }
+=======
+}
+>>>>>>> b516889ff5eac5496936d8573d45a46f912d2e94
