@@ -219,7 +219,19 @@ h3{
     justify-content: center;
 }
 
-.postMedia img{
+.postMedia > img{
     width: 500px;
     height: 100%;
+}
+
+.postHeader img {
+	width: 55px
+}
+
+.postInfo p {
+     font-size: 14px;
+     font-family: sans-serif;
+     text-align: left;
+     color: DarkSlateGrey;
+     font-weight: bold;
 }
